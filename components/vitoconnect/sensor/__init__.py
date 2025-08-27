@@ -17,7 +17,6 @@ CONFIG_SCHEMA = sensor.sensor_schema(OPTOLINKSensor).extend(
     }
 )
 
-
 async def to_code(config):
     var = await sensor.new_sensor(config)
 
