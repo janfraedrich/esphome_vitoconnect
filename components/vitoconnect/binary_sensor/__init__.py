@@ -17,15 +17,6 @@ CONFIG_SCHEMA = binary_sensor.binary_sensor_schema(OPTOLINKBinarySensor).extend(
     }
 )
 
-<<<<<<< HEAD
-=======
-CONFIG_SCHEMA =  binary_sensor.binary_sensor_schema(OPTOLINKBinarySensor).extend({
-    cv.GenerateID(): cv.declare_id(OPTOLINKBinarySensor),
-    cv.GenerateID(CONF_VITOCONNECT_ID): cv.use_id(VitoConnect),
-    cv.Required(CONF_ADDRESS): cv.uint16_t
-})
->>>>>>> 2841402 (feat(number, switch): add write support)
-
 async def to_code(config):
     var = await binary_sensor.new_binary_sensor(config)
 
